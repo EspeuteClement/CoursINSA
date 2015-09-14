@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+
+\usepackage{custom}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{polyglossia}
+\setmainlanguage{francais}
+%mathieu.maranzana@insa-lyon.fr
+\title{Système}
+\author{{\sc Espeute} Clément}
+\date{14 septembre 2015}
+
+
+\begin{document}
+\pagestyle{fancy}
+\maketitle
+
+\newpage
+\section*{Equipe pédagogique système}
+\subsection{Objectis généraux}
+
+Moyenne UE >= 10, EC >= 7 (sinon pas de compensation)
+
+Maitriser les concepts et principes fondamentaux des sytsèmes d'exploitation (architechture, organisation, interruption, fonctionnement ...)
+
+Savoir définir, sépcifier et concevoir une architechture complexe (matérielle et logicielle) qui erspecte un certain nombre de contraintes et d'exigences
+
+\subsection{Volume horaire}
+3IF 22.5 h de cours, 6 séances (2h) de TD, 6 séances de TP (4h) total 58.5 h
+
+\subsection{Projet longue durée}
+Système et réseau 8 sécances
+
+\subsection{Contenu}
+Système d'exploitation Linux + shell
+
+Makefile 1 - 2
+
+Debugger (TD 3)
+
+Multitâche linux (3 TD)
+
+
+TP initiation linux + kde (EP-TP1)
+
+TP initiation réseau IF (EP-TP2)
+
+Mutitache Temps Partagé (PC-TP1\&2)
+
+\subsection{Intéractions}
+Architechture matériel / logiciel système
+
+Ingénierie Projet (qualité et technique de tests, conduite de projets)
+
+Méthode de développement de logiciels (Languages C / C++ ,Orienté Objet)
+
+Réseaux
+
+\subsection{Biblio}
+Shell (Le système UNIX Inter editions)
+
+Bash Référence Manual (v4.3) 
+
+GNU make (v4.1)
+\label{sub:}
+
+% subsection  (end)
+\label{sub:}
+
+% subsection  (end)
+\label{sub:}
+
+% subsection  (end)
+\end{document}

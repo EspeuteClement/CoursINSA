@@ -1,0 +1,13 @@
+\documentclass[11pt]{article}
+\usepackage{custom}
+\usepackage{lipsum}
+\title{Sytle Test}
+\author{Jean Raloul le grand poney}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section{Lorem Ipsum}
+\lipsum
+
+\end{document}
