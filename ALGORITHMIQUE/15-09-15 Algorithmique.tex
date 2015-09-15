@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage{custom}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{polyglossia}
+\usepackage{verbatim}
+\setmainlanguage{francais}
+
+\title{Algorithmique}
+\author{{\sc Espeute} Clément}
+\date{14 septembre 2015}
+
+\begin{document}
+\pagestyle{fancy}
+\maketitle
+\newpage
+
+\section{Pseudo code}
+Procédure : moyenne(a,b)
+Entrée : entier a
+			entier b
+			
+sortie reel résultat, correspondant à (a+b)
+
+\begin{verbatim}
+début
+  | résultat <- (a+b)
+  | résultat <- résultat/2
+\end{verbatim}
+
+Exemple 
+
+\begin{verbatim}
+Procédure racines(a,b,c,r1,r2)
+ | Entrée   : reel a
+ |            reel b
+ |            reel c
+ | Sortie   : reel r1
+ |            reel r2
+ | Précondition : b^2 - 4ac >= 0
+\end{verbatim}
+
+Instructions :
+
+Expressions arithmétiques
+\begin{verbatim}
+	e1 <- (10 mod 3) + (5 div 2)
+	e2 <- e1 * 2
+	r1 <- 4.5 * 2.0
+\end{verbatim}
+
+Opérations de comparaison
+
+Opérations logiques
+\begin{verbatim}
+	b1 <- (r1 > 4.2) ou (e1 = e2)
+	b2 <- non(b1) et r1 <= 4.2
+\end{verbatim}
+
+Enchaînements
+
+Séquentiel
+
+Coût de l'algorithme : Nbre d'instruction effectuée pondéré du coup en mémoire de l'instruction
+
+Enchainement alternatif
+
+\begin{verbatim}
+	si condition alors
+	  |  --instruction
+	sinon
+	  |  -- autre instruction
+\end{verbatim}
+
+Repetitions
+
+\begin{verbatim}
+	tant que condition faire
+	  | 
+\end{verbatim}
+\end{document}

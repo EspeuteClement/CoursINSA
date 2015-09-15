@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+
+\usepackage{custom}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{polyglossia}
+\setmainlanguage{francais}
+
+\title{Module Bases de Données Relationelles (BDR)}
+\author{{\sc Espeute} Clément}
+\date{14 septembre 2015}
+
+\begin{document}
+\pagestyle{fancy}
+\maketitle
+\newpage
+\section{Introduction}
+\subsection{Compétences}
+Créer gérer une base de données, Interroger, Concevoir des applications, Intégration d'une base de données relationnelle.
+\subsection{Contexte}
+Gérer des données très volumineuses. Stocker, renouveler, mettre à jour les dionées -> Base de données permettant de les structurer, d'assurer leur intégrité, via des langages de haut niveau.
+
+\emph{Examples de données p10 poly}
+
+\subsection{Données dans les BDs}
+Hypothése du monde clos (tout ce qui est dans la BDs est vrai, le reste est considéré faux)
+
+\subsection{Systeme de gestion de Fichiers}
+Offre une vue des données indépendante du support physique utilisé. Les données sont stockes dans des fichiers qui sont accéder par des applications. Problèmes : Redondance des données entre applications
+
+\subsection{Systeme de gestion de base de données}
+Plus de fichiers, les données sont stockées dans la base de donnée. Permet de répondre au besoin de plusieurs applications et plusieurs utilisateurs.
+
+\section{SGBD}
+Mets en relation les données. Manipulation simple avec un langage déclaratif.
+Exemple {\tt SELECT ... FROM ... WHERE ...}
+
+Gestion de la choérence (vérification des valeurs, des types, relations entre les autres données).
+
+Permet de gérer les accès concurrents, en gérant les mise à jours conflictuelles.
+
+\section{Applications}
+Gestion, production, fichiers administratifs
+
+\subsection{Intro}
+
+Clé : un attribut qui permet d'identifier de manière unique, et il est toujours déclaré.
+
+Clé primaire : Celle qui est choisie
+
+Clé étrangère : Clé qui référence une autre table distante
+
+\subsection{Types de donnés}
+Numériques {\tt INT, SMALLINT, FLOAT, FLOAT(précision), NUMBER(précision, echelle)}
+
+Chaînes de caractères {\tt CHAR(Longeur) (fixe), VARCHAR2(Longeur max) (variable) }
+
+Temporelles {\tt DATE (yyy-mm-hh), HEURE (HH:MM:SS), TIMESTAMP, Sysdate}
+
+Sequences Binaires
+
+\subsection{Création de table}
+%TODO Metre environement Verbatim
+{\tt CREATE TABLE Licencie ( Nom varchar2(15),Prenom varchar2(15) ...)}
+
+\subsubsection{Ajout de contrainte de clé primaire :}
+
+{\tt CONSTRAINT nom\_de\_la\_contrainte PRIMARY KEY(nom\_de\_la\_clef)}
+
+\subsubsection{Clé étrangères :}
+
+{\tt CONSTRAINT nom\_de\_la\_contrainte FOREIGN KEY (nom\_de\_la\_clef) REFERENCES nomTable}
+
+Permet de vérifier que le ta table référencé existe quand on crée un tuple
+
+On peut uttiliser ON DELETE CASCADE ou ON DELETE SET NULL pour gérér les supréssions avec contraintes
+
+\subsection{}
+\end{document}

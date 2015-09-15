@@ -1,0 +1,11 @@
+\usepackage{titlesec} % Pour les titres
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx} % Pour les boites colorées
+
+\usepackage{lipsum} % Générer des lorem ipsum (utile pour le débug)
+\usepackage{fancyhdr} % Des boooo en têtes
+\usepackage{polyglossia} % Pour les accents avec xelatex
+\setmainlanguage{francais}
+
+\titleformat{\section}
+	{\Large\scshape}{\colorbox{black!40}{\thesection}}{2pt}{\colorbox{black!15}}
